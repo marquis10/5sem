@@ -9,15 +9,13 @@ void ZamenaArray(int[] array)
 {
     int z = 0;
     for (int i = 0; i < array.Length; i++)
-    z = array[i];
-    z *= (-1);
-    array[i] = z;
-Console.WriteLine($"Элементы заменены: {array}");
+    array[i] *= (-1);
+Console.WriteLine($"Конечный массив: [{string.Join(", ", array)}]");
 }
 
 Console.WriteLine("Введите количество элементов массива: ");
 int n = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[n];
 InputArray(array);
-Console.WriteLine($"[{string.Join(", ", array)}]");
+Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
 ZamenaArray(array);
