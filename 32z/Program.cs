@@ -7,7 +7,6 @@ void InputArray(int[] array)
 
 void ZamenaArray(int[] array)
 {
-    int z = 0;
     for (int i = 0; i < array.Length; i++)
     array[i] *= (-1);
 Console.WriteLine($"Конечный массив: [{string.Join(", ", array)}]");
